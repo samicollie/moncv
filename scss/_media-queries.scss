@@ -1,0 +1,27 @@
+/* landscape phone and down */
+@mixin xs {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+/* landscape phone to portrait tablet */
+@mixin sm {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+/* portrait tablet to landscape and desktop */
+@mixin md {
+  @media only screean and (min-width: 768px) and (max-width: 979px) {
+    @content;
+  }
+}
+
+/* large desktop */
+@mixin xl {
+  @media only screen and (min-width: 980px) {
+    @content;
+  }
+}
