@@ -135,7 +135,7 @@ aside {
     height: 5px;
     top: 0;
     left: 0;
-    width: 65%;
+    width: 70%;
     background: var(--light);
   }
   .bar-skill-dot-css {
@@ -143,7 +143,7 @@ aside {
     height: 10px;
     width: 10px;
     background: var(--dark);
-    left: calc(65% - 5px);
+    left: calc(70% - 5px);
     top: -2.5px;
     transform: rotate(45deg);
   }
@@ -154,7 +154,7 @@ aside {
     height: 5px;
     top: 0;
     left: 0;
-    width: 67%;
+    width: 70%;
     background: var(--light);
   }
   .bar-skill-dot-js {
@@ -162,7 +162,7 @@ aside {
     height: 10px;
     width: 10px;
     background: var(--dark);
-    left: calc(67% - 5px);
+    left: calc(70% - 5px);
     top: -2.5px;
     transform: rotate(45deg);
   }
@@ -173,7 +173,7 @@ aside {
     height: 5px;
     top: 0;
     left: 0;
-    width: 70%;
+    width: 80%;
     background: var(--light);
   }
   .bar-skill-dot-php {
@@ -181,7 +181,7 @@ aside {
     height: 10px;
     width: 10px;
     background: var(--dark);
-    left: calc(70% - 5px);
+    left: calc(80% - 5px);
     top: -2.5px;
     transform: rotate(45deg);
   }
@@ -195,11 +195,22 @@ aside {
     .bootstrap {
       color: #7a11f7;
     }
+    .symfo {
+      filter: invert(1);
+    }
+  }
+
+  .devops-block{
+    padding: 2rem 0;
+    display: flex;
+    i{
+      margin : 0 1rem;
+    }
     .git {
       color: #f74f28;
     }
-    .symfo {
-      filter: invert(1);
+    .docker{
+      color : #086dd7;
     }
   }
   .database-block {
@@ -305,9 +316,6 @@ footer {
   h2 {
     margin-bottom: 3rem;
   }
-  a {
-    color: white;
-  }
   form {
     display: flex;
     flex-direction: column;
@@ -346,7 +354,8 @@ footer {
         outline: 0;
         border: 0;
         min-width: 40rem;
-        padding: 1rem 2rem;
+        padding : 1rem;
+        resize: none;
         border-top-left-radius: 0.5rem;
         border-bottom-left-radius: 0.5rem;
         &::placeholder {
